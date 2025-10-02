@@ -167,4 +167,4 @@ Kemudian membuka file wireshark nya untuk menjawab total pocket ada di bagian ba
 
 Nah untuk soal-soal selanjutnya bisa menggunakan filter untuk mencari user dan passwordnya, kemudian akan mendapatkannya lewat follow > tcp stream > (lupa bukti screenshootnya)
 Setelah mendapat hasil di no 2, 3 dan  akan mendapat flagnya
-![alt text](images/soal_141.png)
+![alt text](images/soal_142.png)
