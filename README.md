@@ -11,6 +11,11 @@
 
 ## Reporting
 
+### Soal 1
+
+Kita membuat sebuah topologi seperti ini
+![alt text](images/soal_1.png)
+
 ### Soal 10
 
 
