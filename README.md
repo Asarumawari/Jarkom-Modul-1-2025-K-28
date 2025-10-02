@@ -16,6 +16,122 @@
 Kita membuat sebuah topologi seperti ini
 ![alt text](images/soal_1.png)
 
+dengan config di masing-masing
+Eru
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 192.225.1.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 192.225.2.1
+	netmask 255.255.255.0
+```
+Melkor
+```
+auto eth0
+iface eth0 inet static
+      address 192.225.1.2
+      netmask 255.255.255.0
+      gateway 192.225.1.1
+```
+Manwe
+```
+auto eth0
+iface eth0 inet static
+	address 192.225.1.3
+	netmask 255.255.255.0
+	gateway 192.225.1.1
+```
+Varda
+```
+auto eth0
+iface eth0 inet static
+	address 192.225.2.2
+	netmask 255.255.255.0
+	gateway 192.225.2.1
+```
+Ulmo
+```
+auto eth0
+iface eth0 inet static
+	address 192.225.2.3
+	netmask 255.255.255.0
+	gateway 192.225.2.1
+```
+
+### Soal 4
+Untuk memastikan agar mereka tersambung ke internet maka menggunakan command
+```
+ping google
+```
+atau
+```
+ping 8080
+```
+
+### soal 6
+```
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5" -O traffic.zip
+```
+kemudian bisa unzip traffic.zip
+
+untuk beri izin
+```
+chmod +x traffic.zip
+```
+kemudian ke wireshark > start capture
+
+untuk menjalankan 
+```
+./traffic.sh
+```
+![alt text](images/traffic.png)
+
+### Soal 7
+Langkah awal install FTP Server
+```
+apt install vfstpd
+vfstpd -v
+```
+Buat direktori yang namanya shared
+```
+mkdir -p /rara/shared
+```
+Kalo udah buat user Ainur sama Melkor
+```
+adduser ainur
+adduser melkor
+```
+Menjalankan FTP server
+```
+service vsftpd restart
+ftp localhost
+```
+Buat kasih izin ke ainur biar file shared jadi milik dia
+```
+chown ainur : ainur shared
+chmod ainur 700 shared
+cd shared
+```
+Kalau mau login bisa pake
+```
+su ainur
+```
+Buat file baru pake
+```
+touch
+```
+
+Kalau Melkor gak bisa jadi user karena izin hanya untuk Ainur
+
+
+
 ### Soal 10
 
 
