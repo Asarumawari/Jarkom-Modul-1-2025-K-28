@@ -168,3 +168,29 @@ Kemudian membuka file wireshark nya untuk menjawab total pocket ada di bagian ba
 Nah untuk soal-soal selanjutnya bisa menggunakan filter untuk mencari user dan passwordnya, kemudian akan mendapatkannya lewat follow > tcp stream > (lupa bukti screenshootnya)
 Setelah mendapat hasil di no 2, 3 dan  akan mendapat flagnya
 ![alt text](images/soal_142.png)
+
+### Soal 16
+
+```
+nc 10.15.43.32 3403
+```
+
+filter 
+```
+ftp.request.command == "USER" or ftp.request.command == "PASS"
+```
+Nah, kemudian bisa klik kanan > tcp stream > save as raw 
+![alt text](images/soal_16.png)
+save raw -buka ubuntu
+```
+sha256sum q.exe 
+sha256sum w.exe
+sha256sum r.exe
+```
+![alt text](images/soal_161.png)
+flag
+```
+Congratulations! Here is your flag: KOMJAR25{Y0u_4r3_4_g00d_4nalyz3r_Htq7CPtj1bfCL614kLe4hMlq7}
+```
+![alt text](images/soal_162.png)
+
