@@ -99,10 +99,12 @@ Langkah awal install FTP Server
 apt install vfstpd
 vfstpd -v
 ```
+![alt text](images/soal_7.png)
 Buat direktori yang namanya shared
 ```
 mkdir -p /rara/shared
 ```
+![alt text](images/soal_1.png)
 Kalo udah buat user Ainur sama Melkor
 ```
 adduser ainur
@@ -113,6 +115,7 @@ Menjalankan FTP server
 service vsftpd restart
 ftp localhost
 ```
+![alt text](images/soal_75.png)
 Buat kasih izin ke ainur biar file shared jadi milik dia
 ```
 chown ainur : ainur shared
@@ -127,6 +130,8 @@ Buat file baru pake
 ```
 touch
 ```
+![alt text](images/soal_76.png)
+![alt text](images/soal_77.png)
 
 Kalau Melkor gak bisa jadi user karena izin hanya untuk Ainur
 
