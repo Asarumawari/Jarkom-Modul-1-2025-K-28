@@ -179,8 +179,9 @@ filter
 ```
 ftp.request.command == "USER" or ftp.request.command == "PASS"
 ```
-Nah, kemudian bisa klik kanan > tcp stream > save as raw 
 ![alt text](images/soal_16.png)
+Cari yang sesuai sama file yang diminta, misal q, w, x
+Nah, kemudian bisa klik kanan > tcp stream > save as raw 
 save raw -buka ubuntu
 ```
 sha256sum q.exe 
@@ -193,4 +194,84 @@ flag
 Congratulations! Here is your flag: KOMJAR25{Y0u_4r3_4_g00d_4nalyz3r_Htq7CPtj1bfCL614kLe4hMlq7}
 ```
 ![alt text](images/soal_162.png)
+
+### Soal 17
+
+```
+nc 10.15.43.32 3404
+```
+![alt text](images/soal_17.png)
+file > eksport object > follow > http stream
+cari jawaban buat soalnya ada disitu
+
+save raw  > buka ubuntu
+```
+sha256sum knr.exe
+```
+![alt text](images/soal_171.png)
+flag
+```
+Congratulations! Here is your flag: KOMJAR25{M4ster_4n4lyzer_XoqK9EdCYy4M326Y3xlrh0w43}
+```
+![alt text](images/soal_172.png)
+
+### Soal 18
+
+```
+nc 10.15.43.32 3405
+```
+
+pake filter
+```
+frame contain "exe"
+```
+![alt text](images/soal_18.png)
+
+save -> file > eksport smb
+![alt text](images/soal_181.png)
+Buat cari jawaban file sha
+```
+sha256sum file.exe
+```
+
+flag
+```
+Congratulations! Here is your flag: KOMJAR25{Y0u_4re_g0dl1ke_SSnVa8hdCwkQ07iFBoLW82h1t}
+```
+![alt text](images/soal_182.png)
+
+### Soal 19
+```
+nc 10.15.43.32 3406
+```
+
+paket capture > follow tcp stream
+Nah untuk menjawab soal-soalnya ada isinya kayak gini
+![alt text](images/soal_19.png)
+![alt text](images/soal_191.png)
+![alt text](images/soal_192.png)
+
+flag
+```
+Congratulations! Here is your flag: KOMJAR25{Y0u_4re_J4rk0m_G0d_yTKdjZQBydCmGmdYvJY4D3xrP}
+```
+![alt text](images/soal_193.png)
+
+### Soal 20
+
+```
+nc 10.15.43.32 3407
+```
+
+edit > preference > cari TLS di 165 > export object list > save invest_20.dll
+![alt text](images/soal_20.png)
+
+flag
+```
+Congratulations! Here is your flag: KOMJAR25{B3ware_0f_M4lw4re_MPPX7WnbgAupLWnq1EavOBuKV}
+```
+![alt text](images/soal_200.png)
+
+
+
 
