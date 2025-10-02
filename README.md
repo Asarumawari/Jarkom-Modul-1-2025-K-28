@@ -104,7 +104,7 @@ Buat direktori yang namanya shared
 ```
 mkdir -p /rara/shared
 ```
-![alt text](images/soal_1.png)
+![alt text](images/soal_72.png)
 Kalo udah buat user Ainur sama Melkor
 ```
 adduser ainur
