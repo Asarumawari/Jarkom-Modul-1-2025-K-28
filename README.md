@@ -156,3 +156,15 @@ Dari hasil average round trip time, dapat dilihat bahwa terdapat 0% packet loss 
 ![alt text](images/soal_10_d.png)
 
 Disini CPU user-space mengalami kenaikan kecil dari 1.8% ke 5.0% us, yang juga masih rendah dan tidak menunjukkan tanda overload.
+
+### Soal 14
+
+```
+nc 10.15.43.32 3401
+```
+Kemudian membuka file wireshark nya untuk menjawab total pocket ada di bagian bawah kanan
+![alt text](images/soal_141.png)
+
+Nah untuk soal-soal selanjutnya bisa menggunakan filter untuk mencari user dan passwordnya, kemudian akan mendapatkannya lewat follow > tcp stream > (lupa bukti screenshootnya)
+Setelah mendapat hasil di no 2, 3 dan  akan mendapat flagnya
+![alt text](images/soal_141.png)
