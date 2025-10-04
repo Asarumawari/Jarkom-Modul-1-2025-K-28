@@ -135,6 +135,42 @@ touch
 
 Kalau Melkor gak bisa jadi user karena izin hanya untuk Ainur
 
+### Soal 8
+
+
+Hal pertama yang dilakukan adalah mendapatkan file yang terdapat pada google drive di node Ulmo. File txt dapat di copy dengan nano sedangkan image di convert menjadi base64.
+
+
+Selanjutnya node Ulmo melakukan koneksi ke server FTP eru sebagai client dengan `ftp IP Port`.
+
+
+Setelah masuk dapat melakukan login pada user ainur.
+
+
+Setelah itu menjalankan `start capture` di link komunikasi antara Ulmo dan Eru dan mulai mengupload kedua file dari soal.
+
+
+Setelah membuka wireshark dan menerapkan display filter `ftp`, maka data ftp yang sudah diupload sebelumnya akan muncul. Untuk melihat perintah client ke server Eru dapat menggunakan STOR.
+
+
+### Soal 9
+
+Soal 9
+
+
+Sebelum mulai pastikan FTP server sudah jalan dengan `vsftpd`.
+
+
+Jika sudah maka file `Kitab Penciptaan` ditaruh pada direktori ftp dan mengubah user ainur menjadi read only.
+
+
+Sebelumnya kita bisa menguji read-only access dengan `put`
+
+
+Di node Manwe, login ke FTP server Eru pakai user ainur dan download file pada direktori
+
+
+Jika sudah maka selanjutnya adalah melakukan capture dengan wireshark
 
 
 ### Soal 10
