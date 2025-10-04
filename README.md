@@ -203,6 +203,35 @@ Dari hasil average round trip time, dapat dilihat bahwa terdapat 0% packet loss 
 
 Disini CPU user-space mengalami kenaikan kecil dari 1.8% ke 5.0% us, yang juga masih rendah dan tidak menunjukkan tanda overload.
 
+### Soal 11
+
+
+Pertama membuat user beserta password di node melkor
+
+```c
+root@Melkor:~# useradd -m melkor -s /bin/bash
+root@Melkor:~# echo "melkor:erumelkor" | chpasswd
+```
+
+
+Setelah itu kita dapat mengecek apakah port di node melkor sudah aktif atau belum dengan `ss -tlnp | grep 23`. Jika muncul pesan `LISTEN 0 128 *:23` atau semacamnya maka port sudah aktif (kalau belum aktifkan `telnet  stream  tcp  nowait root /usr/sbin/telnetd telnetd` di `nano /etc/inetd.conf`).
+![alt text](images/soal_11_a.png)
+
+
+Jika port pada node melkor sudah aktif maka kita bisa connect dari node eru dengan `telnet 191.225.1.2 23’
+
+
+### Soal 12
+
+Untuk soal ini cukup melakukan pemindaian port pada soal di node melkor melalui node eru
+```c
+nc -zv -w 2 191.225.1.2 23 21 80 666
+```
+
+Berikut hasil pemindaian port:
+![alt text](images/soal_12_a.png)
+
+
 ### Soal 14
 
 ```
