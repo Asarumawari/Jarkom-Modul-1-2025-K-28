@@ -232,6 +232,8 @@ Berikut hasil pemindaian port:
 ![alt text](images/soal_12_a.png)
 
 
+Berdasarkan hasil pemindaian dapat disimpulkan bahwa port-port tersebut tertutup, tetapi mungkin ada cara lain yang dapat dilakukan untuk memindai port yang memungkinkannya untuk mengeluarkan hasil lain.
+
 ### Soal 14
 
 ```
