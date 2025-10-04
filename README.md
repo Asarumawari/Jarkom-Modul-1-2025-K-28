@@ -159,15 +159,25 @@ Soal 9
 
 
 Sebelum mulai pastikan FTP server sudah jalan dengan `vsftpd`.
-
+```c
+root@Eru:~# service vsftpd
+status FTP server is running.
+```
 
 Jika sudah maka file `Kitab Penciptaan` ditaruh pada direktori ftp dan mengubah user ainur menjadi read only.
-
+```c
+ainur@Eru:~$ cp kitab_penciptaan.txt /home/ainur/ftp/
+ainur@Eru:~$ chmod 444 /home/ainur/ftp/kitab_penciptaan.txt
+```
 
 Sebelumnya kita bisa menguji read-only access dengan `put`
 
+![alt text](images/soal_9_c.png)
+
 
 Di node Manwe, login ke FTP server Eru pakai user ainur dan download file pada direktori
+
+![alt text](images/soal_9_b.png)
 
 
 Jika sudah maka selanjutnya adalah melakukan capture dengan wireshark
